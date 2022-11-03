@@ -64,6 +64,12 @@ header .btn {
     gap: 25px;
     list-style-type: none;
 }
+
+@media (max-width: 991px) {
+    header {
+        display: none;
+    }
+}
 /* END HEADER STYLES */
 
 /* START HERO STYLES */
@@ -105,6 +111,19 @@ header .btn {
     line-height: 27px;
     color: #263E56;
 }
+
+@media (max-width: 1200px) {
+    .hero .hero-right img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 /* END HERO STYLES */
 
 /* START PARTNERS STYLES */
@@ -123,6 +142,8 @@ header .btn {
 
 .partners .partners-flex {
     display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
     justify-content: space-evenly;
 }
 /* END PARTNERS STYLES */
